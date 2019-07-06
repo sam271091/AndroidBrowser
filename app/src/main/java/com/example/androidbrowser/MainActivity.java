@@ -9,6 +9,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,10 +24,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         GoToURL("https://www.google.com");
 
+
+        Toast.makeText(MainActivity.this,"Warning!All urls must start with http or https!",Toast.LENGTH_LONG).show();
+
         goButton = (Button)findViewById(R.id.go) ;
         editText = (EditText)findViewById(R.id.URL);
 
         addListenerOnButton();
+
+
     }
 
 
