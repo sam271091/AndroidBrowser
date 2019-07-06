@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         GoToURL("https://www.google.com");
 
 
-        Toast.makeText(MainActivity.this,"Warning!All urls must start with http or https!",Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this,"Warning!All urls must start with http or https!",Toast.LENGTH_LONG).show();
 
         goButton = (Button)findViewById(R.id.go) ;
         editText = (EditText)findViewById(R.id.URL);
